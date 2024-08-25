@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Points</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maya Points</h1>
+        <div class="scoreboard">
+            <div class="user" id="sam">
+                <img src="download (5).jpg" alt="Sam" class="avatar">
+                <h2>Sam</h2>
+                <p id="sam-points">0</p>
+                <div class="buttons">
+                    <button onclick="changePoints('sam', 1)" class="btn add">Add Point</button>
+                    <button onclick="changePoints('sam', -1)" class="btn remove">Remove Point</button>
+                </div>
+            </div>
+            <div class="user" id="misha">
+                <img src="download (4).jpg" alt="Misha" class="avatar">
+                <h2>Misha</h2>
+                <p id="misha-points">0</p>
+                <div class="buttons">
+                    <button onclick="changePoints('misha', 1)" class="btn add">Add Point</button>
+                    <button onclick="changePoints('misha', -1)" class="btn remove">Remove Point</button>
+                </div>
+            </div>
+        </div>
+        <button onclick="resetPoints()" class="reset-btn">Reset All Points</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
